@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradePlaza - Sell</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="upload.css">
+</head>
+<body>
+    <header>
+        <h1>TradePlaza</h1>
+       
+    </header>
+
+    <div class="container">
+        <aside>
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="upload.html">Sell</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            <!-- Main content goes here -->
+            <h2>Upload Page</h2>
+            <form id="uploadForm">
+                <div class="form-group">
+                    <label for="productName">Product Name:</label>
+                    <input type="text" id="productName" name="productName" required>
+                </div>
+                <div class="form-group">
+                    <label for="productImage">Product Image:</label>
+                    <input type="file" id="productImage" name="productImage" accept="image/*" required>
+                </div>
+                <div class="form-group">
+                    <label for="price">Price:</label>
+                    <input type="number" id="price" name="price" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="discount">Discount (%):</label>
+                    <input type="number" id="discount" name="discount" min="0" max="100">
+                </div>
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="storeName">Store Name:</label>
+                    <input type="text" id="storeName" name="storeName" required>
+                </div>
+                <button type="submit">Upload Product</button>
+            </form>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 TradePlaza. All rights reserved.</p>
+    </footer>
+    <script src="upload.js"></script>
+</body>
+</html>
