@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradePlaza - Home</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>TradePlaza</h1>
+       
+    </header>
+
+    <div class="container">
+        <aside>
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="upload.html">Sell</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            <h2>Welcome to TradePlaza</h2>
+            <div class="dashboard">
+                <div class="chart-container">
+                    <canvas id="salesChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="categoryChart"></canvas>
+                </div>
+            </div>
+            <div class="user-comments">
+                <h3>What Our Users Say</h3>
+                <div id="comments-container"></div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 TradePlaza. All rights reserved.</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
